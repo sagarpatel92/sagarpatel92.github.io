@@ -1,120 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome for Social Icons -->
-    <link rel="stylesheet" href="https://cloudflare.com">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="Portfolio of Sagar P. Patel - Results-driven PHP & Full Stack Developer with 9+ years of experience in PHP, Laravel, and Vue.js.">
+<meta name="keywords" content="Sagar Patel, Full Stack Developer, PHP Developer, Laravel Developer, Vue.js Developer, Web Developer Ahmedabad">
+<meta name="author" content="Sagar P. Patel">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Sagar P. Patel - Full Stack Developer (Laravel | Vue.js)</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
-    <!-- Header & Navigation -->
-    <header class="header">
-        <a href="#hero" class="logo">&lt;DevCustoms /&gt;</a>
-        <nav class="navbar">
-            <a href="#hero">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Alex Morgan</span></h1>
-            <h2>Full-Stack Web Developer</h2>
-            <p>I build clean, responsive, and highly performant applications for the web.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn primary-btn">View My Work</a>
-                <a href="#contact" class="btn secondary-btn">Let's Talk</a>
-            </div>
-        </div>
-    </section>
+<!-- PRE LOADER -->
 
-    <!-- About Me Section -->
-    <section id="about" class="about-section">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-container">
-            <div class="about-text">
-                <p>Hello! I am a passionate developer who loves translating complex problems into beautiful, efficient digital solutions. My focus revolves around writing maintainable code and optimization.</p>
-                <p>When I am not coding, you can find me exploring open-source repositories or writing technical blogs.</p>
-            </div>
-        </div>
-    </section>
+<div class="preloader">
+     <div class="spinner">
+          <span class="spinner-rotate"></span>
+     </div>
+</div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <h2 class="section-title">My Tech Stack</h2>
-        <div class="skills-grid">
-            <div class="skill-card"><i class="fab fa-html5"></i> <span>HTML5</span></div>
-            <div class="skill-card"><i class="fab fa-css3-alt"></i> <span>CSS3</span></div>
-            <div class="skill-card"><i class="fab fa-js"></i> <span>JavaScript</span></div>
-            <div class="skill-card"><i class="fab fa-react"></i> <span>React.js</span></div>
-            <div class="skill-card"><i class="fab fa-node-js"></i> <span>Node.js</span></div>
-            <div class="skill-card"><i class="fas fa-database"></i> <span>MongoDB / SQL</span></div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <h2 class="section-title">Recent Projects</h2>
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>E-Commerce Platform</h3>
-                    <p>A full-featured shopping app with payment integration, secure checkout, and user dashboards.</p>
-                    <div class="project-tags">
-                        <span>React</span><span>Node.js</span><span>Stripe</span>
+<!-- Navigation Section -->
+
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+     <div class="container">
+
+          <!-- navbar header -->
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <a href="#home" class="navbar-brand">Sagar P. Patel</a>
+          </div>
+
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home" class="smoothScroll">Home</a></li>
+                    <li><a href="#about" class="smoothScroll">About Me</a></li>
+                    <li><a href="#service" class="smoothScroll">Specialization</a></li>
+                    <li><a href="#experience" class="smoothScroll">Experiences</a></li>
+                    <li><a href="#education" class="smoothScroll">Education</a></li>
+                    <li><a href="#quotes" class="smoothScroll">Philosophy</a></li>
+                    <li><a href="#contact" class="smoothScroll">Contact</a></li>
+               </ul>
+          </div>
+
+     </div>
+</div>
+
+
+<!-- Home Section -->
+
+<section id="home" class="parallax-section">
+     <div class="container">
+          <div class="row flex-row-stretch">
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="home-img"></div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="home-thumb">
+                         <div class="section-title">
+                              <h4 class="wow fadeInUp" data-wow-delay="0.3s">Welcome to my portfolio</h4>
+                              <h1 class="wow fadeInUp" data-wow-delay="0.6s">Hello, I am <strong>Sagar P. Patel</strong></h1>
+                              <div class="wow fadeInUp designation-text" data-wow-delay="0.8s">
+                                   Full Stack Developer (Laravel | Vue.js)
+                              </div>
+                              <p class="wow fadeInUp" data-wow-delay="1.0s">Results-driven PHP Developer with <strong>9+ years of experience</strong> in full-stack development, specializing in backend development using PHP and Laravel, with front-end experience in Vue.js. Proven ability to design, develop, and deploy scalable web applications, portals, and internal systems for enterprise and government sectors.</p>
+                              
+                              <div class="hero-actions wow fadeInUp" data-wow-delay="1.2s">
+                                   <a href="#experience" class="smoothScroll section-btn btn btn-success">View Experiences</a>
+                                   <a href="#contact" class="smoothScroll section-btn btn btn-contact">Get In Touch</a>
+                              </div>
+                         </div>
                     </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Task Management Dashboard</h3>
-                    <p>A productivity application featuring drag-and-drop boards, collaborative workspaces, and time tracking.</p>
-                    <div class="project-tags">
-                        <span>JavaScript</span><span>Firebase</span><span>CSS Grid</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+               </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="contact-subtitle">Have a project in mind or want to say hello? Drop a message!</p>
-        <form class="contact-form" action="#" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn primary-btn">Send Message</button>
-        </form>
-    </section>
+          </div>
+     </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 Alex Morgan. Built with semantic HTML & CSS.</p>
-        <div class="social-links">
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-        </div>
-    </footer>
+
+<!-- About Section -->
+
+<section id="about" class="parallax-section">
+     <div class="container">
+          <div class="row flex-row-stretch">
+
+               <div class="col-md-6 col-sm-12">
+                    <div class="about-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
+                              <h1>About Me</h1>
+                              <p class="color-yellow">Full Stack Developer | 9+ Years Experience</p>
+                         </div>
+                         <div class="wow fadeInUp" data-wow-delay="0.6s">
+                              <p>I am a passionate, results-oriented <strong>Full Stack Developer</strong> based in <strong>Ahmedabad, Gujarat, India</strong>. Over the last 9+ years, I have engineered high-impact web portals, enterprise ERP modules, and mission-critical government applications.</p>
+                              <p>My expertise spans end-to-end full-stack lifecycle engineering — from database architecture and secure RESTful / GraphQL API services with PHP &amp; Laravel to interactive, reactive user interfaces with Vue.js. I have extensive experience in high-volume transactional systems, document mapping workflows, and server &amp; network infrastructure.</p>
+                         </div>
+
+                         <div class="wow fadeInUp" data-wow-delay="0.9s" style="margin-top: 20px;">
+                              <div class="row">
+                                   <div class="col-xs-12 col-sm-6">
+                                        <p style="margin-bottom: 8px;"><strong><i class="fa fa-map-marker" style="color:#E3AE57; margin-right:6px;"></i> Location:</strong> Ahmedabad, Gujarat, India</p>
+                                        <p style="margin-bottom: 8px;"><strong><i class="fa fa-phone" style="color:#E3AE57; margin-right:6px;"></i> Phone:</strong> +91 8866561050</p>
+                                   </div>
+                                   <div class="col-xs-12 col-sm-6">
+                                        <p style="margin-bottom: 8px;"><strong><i class="fa fa-envelope" style="color:#E3AE57; margin-right:6px;"></i> Email:</strong> sagarp9036@gmail.com</p>
+                                        <p style="margin-bottom: 8px;"><strong><i class="fa fa-briefcase" style="color:#E3AE57; margin-right:6px;"></i> Experience:</strong> 9+ Years</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="col-md-3 col-sm-6">
+                    <div class="background-image about-img"></div>
+               </div>
+
+               <div class="bg-yellow col-md-3 col-sm-6" id="skills">
+                    <div class="skill-thumb">
+                         <div class="wow fadeInUp section-title color-white" data-wow-delay="0.4s">
+                              <h1>Skills &amp; Tech</h1>
+                              <p class="color-white">Core Technologies &amp; Tools</p>
+                         </div>
+
+                         <div class="wow fadeInUp" data-wow-delay="0.6s">
+                              <div class="skill-category-block">
+                                   <h5><i class="fa fa-server"></i> Backend</h5>
+                                   <span class="tech-pill">PHP</span>
+                                   <span class="tech-pill">Laravel</span>
+                                   <span class="tech-pill">RestAPI</span>
+                                   <span class="tech-pill">WordPress</span>
+                              </div>
+
+                              <div class="skill-category-block">
+                                   <h5><i class="fa fa-code"></i> Frontend</h5>
+                                   <span class="tech-pill">Vue.js</span>
+                                   <span class="tech-pill">HTML5</span>
+                                   <span class="tech-pill">CSS</span>
+                                   <span class="tech-pill">Bootstrap</span>
+                                   <span class="tech-pill">JavaScript</span>
+                                   <span class="tech-pill">Redis</span>
+                              </div>
+
+                              <div class="skill-category-block">
+                                   <h5><i class="fa fa-database"></i> Database</h5>
+                                   <span class="tech-pill">PostgreSQL</span>
+                                   <span class="tech-pill">MySQL</span>
+                                   <span class="tech-pill">CouchDB</span>
+                                   <span class="tech-pill">SQL Server</span>
+                              </div>
+
+                              <div class="skill-category-block">
+                                   <h5><i class="fa fa-wrench"></i> Tools &amp; Infra</h5>
+                                   <span class="tech-pill">Git</span>
+                                   <span class="tech-pill">Jira</span>
+                                   <span class="tech-pill">Postman</span>
+                                   <span class="tech-pill">VMware</span>
+                                   <span class="tech-pill">NAS</span>
+                                   <span class="tech-pill">Firewall</span>
+                                   <span class="tech-pill">IBM 3650</span>
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Service Section -->
+
+<section id="service" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="bg-yellow col-md-3 col-sm-6">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.4s">
+                         <i class="fa fa-server"></i>
+                         <h3>Backend &amp; APIs</h3>
+                         <p class="color-white">Robust backend systems using PHP and Laravel. Expertise in designing and developing high-performance RESTful APIs, GraphQL, and microservice architectures.</p>
+                    </div>
+               </div>
+
+               <div class="col-md-3 col-sm-6">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.7s">
+                         <i class="fa fa-desktop"></i>
+                         <h3>Frontend &amp; Vue.js</h3>
+                         <p class="color-white">Reactive, responsive single-page applications and interfaces built with Vue.js, modern JavaScript, Bootstrap, HTML5, and CSS3 for seamless user experience.</p>
+                    </div>
+               </div>
+
+               <div class="bg-dark col-md-3 col-sm-6">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.0s">
+                         <i class="fa fa-database"></i>
+                         <h3>Database Architecture</h3>
+                         <p class="color-white">Scalable database schema design, querying, indexing, and management with PostgreSQL, MySQL, CouchDB, SQL Server, and Redis caching.</p>
+                    </div>
+               </div>
+
+               <div class="bg-white col-md-3 col-sm-6">
+                    <div class="wow fadeInUp service-thumb" data-wow-delay="1.3s">
+                         <i class="fa fa-shield"></i>
+                         <h3>Portals &amp; Infrastructure</h3>
+                         <p>Enterprise &amp; government portal engineering (iiLMS, Election, Tourism), ERP system administration, VMware virtualization, firewall security, and NAS backup systems.</p>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Experience Section -->
+
+<section id="experience" class="parallax-section">
+     <div class="container">
+          <div class="row flex-row-stretch">
+
+               <div class="col-md-5 col-sm-12">
+                    <div class="background-image experience-img"></div>
+               </div>
+
+               <div class="col-md-7 col-sm-12">
+                    <div class="color-white experience-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
+                              <h1>Professional Experience</h1>
+                              <p class="color-white">9+ Years of Building Enterprise, Government &amp; Web Applications</p>
+                         </div>
+
+                         <!-- Job 1 -->
+                         <div class="wow fadeInUp exp-item" data-wow-delay="0.4s">
+                              <div class="exp-header">
+                                   <h3 class="exp-title">PHP Developer</h3>
+                                   <span class="exp-date"><i class="fa fa-calendar"></i> Jan 2025 – Jul 2025</span>
+                              </div>
+                              <div class="exp-company"><i class="fa fa-building"></i> Silver Touch Technologies Limited &nbsp;|&nbsp; <i class="fa fa-map-marker"></i> Gandhinagar, Gujarat</div>
+                              <span class="exp-role-badge">Role: Backend and Frontend Development</span>
+                              <ul class="exp-bullet-list">
+                                   <li>Developed <strong>iiLMS</strong>, a High Court portal for cash mapping and case status updates, enabling users to upload case-related documents and access legal opinions from the department, improving operational efficiency.</li>
+                                   <li>Built responsive, dynamic front-end interfaces using <strong>Vue.js</strong> to improve portal usability and case-tracking workflows.</li>
+                              </ul>
+                              <div class="exp-tech-container">
+                                   <strong>Technologies:</strong>
+                                   <span class="tech-pill">PHP</span>
+                                   <span class="tech-pill">Laravel</span>
+                                   <span class="tech-pill">Vue.js</span>
+                                   <span class="tech-pill">HTML5</span>
+                                   <span class="tech-pill">CSS</span>
+                                   <span class="tech-pill">Bootstrap</span>
+                                   <span class="tech-pill">JavaScript</span>
+                                   <span class="tech-pill">CouchDB</span>
+                                   <span class="tech-pill">PostgreSQL</span>
+                                   <span class="tech-pill">Git</span>
+                              </div>
+                         </div>
+
+                         <!-- Job 2 -->
+                         <div class="wow fadeInUp exp-item" data-wow-delay="0.5s">
+                              <div class="exp-header">
+                                   <h3 class="exp-title">PHP Developer</h3>
+                                   <span class="exp-date"><i class="fa fa-calendar"></i> Apr 2024 – Sep 2024</span>
+                              </div>
+                              <div class="exp-company"><i class="fa fa-building"></i> SISL Infotech Pvt Ltd. &nbsp;|&nbsp; <i class="fa fa-map-marker"></i> Gandhinagar, Gujarat</div>
+                              <span class="exp-role-badge">Role: Backend and Frontend Development</span>
+                              <ul class="exp-bullet-list">
+                                   <li>Developed an <strong>Employee Portal for a Port Management System</strong>, enabling employees to access nominations, leave management, education details, training attendance, personal information, and payroll data.</li>
+                                   <li>Implemented <strong>Vue.js</strong> components on the front end to enhance interactivity and improve employee self-service capabilities.</li>
+                              </ul>
+                              <div class="exp-tech-container">
+                                   <strong>Technologies:</strong>
+                                   <span class="tech-pill">PHP</span>
+                                   <span class="tech-pill">Laravel</span>
+                                   <span class="tech-pill">Vue.js</span>
+                                   <span class="tech-pill">E-sign</span>
+                                   <span class="tech-pill">HTML5</span>
+                                   <span class="tech-pill">CSS</span>
+                                   <span class="tech-pill">Bootstrap</span>
+                                   <span class="tech-pill">JavaScript</span>
+                                   <span class="tech-pill">PostgreSQL</span>
+                                   <span class="tech-pill">Git</span>
+                              </div>
+                         </div>
+
+                         <!-- Job 3 -->
+                         <div class="wow fadeInUp exp-item" data-wow-delay="0.6s">
+                              <div class="exp-header">
+                                   <h3 class="exp-title">Software Developer (PHP)</h3>
+                                   <span class="exp-date"><i class="fa fa-calendar"></i> Oct 2021 – Mar 2024</span>
+                              </div>
+                              <div class="exp-company"><i class="fa fa-building"></i> Dev Information Technology Ltd. &nbsp;|&nbsp; <i class="fa fa-map-marker"></i> Gandhinagar, Gujarat</div>
+                              <span class="exp-role-badge">Role: Backend and Frontend Development</span>
+                              <ul class="exp-bullet-list">
+                                   <li>Collaborated on a <strong>Tourism Management Project</strong>, developing an inward-outward file tracking system to streamline processing of various services and improve operational efficiency.</li>
+                                   <li>Developed and managed an <strong>Election Project module</strong> including a Public Dashboard, Booth &amp; Ward management, Seat Master, Sarpanch election, and Winner entry, supporting online seat nomination registration, vote counting tables, and round-wise vote entry across multiple election types (MNP, NPE, DEP, VPE).</li>
+                              </ul>
+                              <div class="exp-tech-container">
+                                   <strong>Technologies:</strong>
+                                   <span class="tech-pill">PHP</span>
+                                   <span class="tech-pill">Laravel</span>
+                                   <span class="tech-pill">Vue.js</span>
+                                   <span class="tech-pill">Redis</span>
+                                   <span class="tech-pill">RestAPI</span>
+                                   <span class="tech-pill">GraphQL</span>
+                                   <span class="tech-pill">CouchDB</span>
+                                   <span class="tech-pill">HTML5</span>
+                                   <span class="tech-pill">CSS</span>
+                                   <span class="tech-pill">Bootstrap</span>
+                                   <span class="tech-pill">JavaScript</span>
+                                   <span class="tech-pill">PostgreSQL</span>
+                                   <span class="tech-pill">Git</span>
+                              </div>
+                         </div>
+
+                         <!-- Job 4 -->
+                         <div class="wow fadeInUp exp-item" data-wow-delay="0.7s">
+                              <div class="exp-header">
+                                   <h3 class="exp-title">IT Executive</h3>
+                                   <span class="exp-date"><i class="fa fa-calendar"></i> Apr 2019 – Jul 2021</span>
+                              </div>
+                              <div class="exp-company"><i class="fa fa-building"></i> Senor Metals Pvt Ltd. &nbsp;|&nbsp; <i class="fa fa-map-marker"></i> Jamnagar, Gujarat</div>
+                              <span class="exp-role-badge">Role: IT Infrastructure Management</span>
+                              <ul class="exp-bullet-list">
+                                   <li>Managed IT infrastructure including <strong>Crystal Reports</strong> development, ERP server administration, hardware and networking, CCTV systems, firewall management, and NAS-based ERP backups.</li>
+                              </ul>
+                              <div class="exp-tech-container">
+                                   <strong>Technologies:</strong>
+                                   <span class="tech-pill">Hardware</span>
+                                   <span class="tech-pill">Networking</span>
+                                   <span class="tech-pill">Crystal Reports</span>
+                                   <span class="tech-pill">SQL Server</span>
+                                   <span class="tech-pill">NAS</span>
+                                   <span class="tech-pill">Cyberoam &amp; Sophos Firewalls</span>
+                                   <span class="tech-pill">VMware</span>
+                                   <span class="tech-pill">IBM 3650 Server</span>
+                              </div>
+                         </div>
+
+                         <!-- Job 5 -->
+                         <div class="wow fadeInUp exp-item" data-wow-delay="0.8s">
+                              <div class="exp-header">
+                                   <h3 class="exp-title">PHP Developer</h3>
+                                   <span class="exp-date"><i class="fa fa-calendar"></i> Jun 2018 – Mar 2019</span>
+                              </div>
+                              <div class="exp-company"><i class="fa fa-building"></i> DOT InfoTech &nbsp;|&nbsp; <i class="fa fa-map-marker"></i> Ahmedabad, Gujarat</div>
+                              <span class="exp-role-badge">Role: Backend and Frontend Development</span>
+                              <ul class="exp-bullet-list">
+                                   <li>Contributed to a <strong>University Management System</strong> covering student enrollment, course management, faculty assignments, attendance tracking, and academic performance, improving efficiency and transparency for staff and students.</li>
+                              </ul>
+                              <div class="exp-tech-container">
+                                   <strong>Technologies:</strong>
+                                   <span class="tech-pill">PHP</span>
+                                   <span class="tech-pill">Laravel</span>
+                                   <span class="tech-pill">HTML5</span>
+                                   <span class="tech-pill">CSS</span>
+                                   <span class="tech-pill">Bootstrap</span>
+                                   <span class="tech-pill">JavaScript</span>
+                                   <span class="tech-pill">PostgreSQL</span>
+                                   <span class="tech-pill">Git</span>
+                              </div>
+                         </div>
+
+                         <!-- Job 6 -->
+                         <div class="wow fadeInUp exp-item" data-wow-delay="0.9s">
+                              <div class="exp-header">
+                                   <h3 class="exp-title">Jr. PHP Developer</h3>
+                                   <span class="exp-date"><i class="fa fa-calendar"></i> Mar 2016 – May 2018</span>
+                              </div>
+                              <div class="exp-company"><i class="fa fa-building"></i> Avdevs Solution Pvt Ltd. &nbsp;|&nbsp; <i class="fa fa-map-marker"></i> Vadodara, Gujarat</div>
+                              <span class="exp-role-badge">Role: Backend and Frontend Development</span>
+                              <ul class="exp-bullet-list">
+                                   <li>Worked on Laravel and WordPress projects, building CMS-based multilingual websites using custom plugins to enhance accessibility and user experience.</li>
+                              </ul>
+                              <div class="exp-tech-container">
+                                   <strong>Technologies:</strong>
+                                   <span class="tech-pill">Laravel</span>
+                                   <span class="tech-pill">WordPress</span>
+                                   <span class="tech-pill">HTML5</span>
+                                   <span class="tech-pill">CSS</span>
+                                   <span class="tech-pill">Bootstrap</span>
+                                   <span class="tech-pill">MySQL</span>
+                                   <span class="tech-pill">Git</span>
+                              </div>
+                         </div>
+
+                         <!-- Job 7 -->
+                         <div class="wow fadeInUp exp-item" data-wow-delay="1.0s">
+                              <div class="exp-header">
+                                   <h3 class="exp-title">Trainee Web Developer</h3>
+                                   <span class="exp-date"><i class="fa fa-calendar"></i> Aug 2015 – Feb 2016</span>
+                              </div>
+                              <div class="exp-company"><i class="fa fa-building"></i> Savitriya Technology Pvt Ltd. &nbsp;|&nbsp; <i class="fa fa-map-marker"></i> Ahmedabad, Gujarat</div>
+                              <span class="exp-role-badge">Role: Backend and Frontend Development</span>
+                              <ul class="exp-bullet-list">
+                                   <li>Implemented the Laravel framework to build a <strong>Restaurant Management System</strong> with order management features, streamlining operational workflows and improving customer service efficiency.</li>
+                              </ul>
+                              <div class="exp-tech-container">
+                                   <strong>Technologies:</strong>
+                                   <span class="tech-pill">PHP</span>
+                                   <span class="tech-pill">Laravel</span>
+                                   <span class="tech-pill">HTML5</span>
+                                   <span class="tech-pill">CSS</span>
+                                   <span class="tech-pill">Bootstrap</span>
+                                   <span class="tech-pill">JavaScript</span>
+                                   <span class="tech-pill">PostgreSQL</span>
+                                   <span class="tech-pill">Git</span>
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Education Section -->
+
+<section id="education" class="parallax-section">
+     <div class="container">
+          <div class="row flex-row-stretch">
+
+               <div class="col-md-6 col-sm-12">
+                    <div class="color-white education-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
+                              <h1>My Education</h1>
+                              <p class="color-white">Academic Qualifications &amp; Technical Foundation</p>
+                         </div>
+
+                         <!-- Master's Degree -->
+                         <div class="wow fadeInUp edu-item" data-wow-delay="0.6s">
+                              <h3 class="edu-degree"><i class="fa fa-graduation-cap"></i> Master of Computer Applications (M.C.A.)</h3>
+                              <div class="edu-institution"><i class="fa fa-university"></i> Gujarat Technological University, Ahmedabad, Gujarat, India</div>
+                              <p class="edu-desc">Comprehensive postgraduate degree covering advanced software engineering, distributed computing, database management systems, algorithms, and full-stack web application development.</p>
+                         </div>
+
+                         <!-- Bachelor's Degree -->
+                         <div class="wow fadeInUp edu-item" data-wow-delay="0.9s">
+                              <h3 class="edu-degree"><i class="fa fa-graduation-cap"></i> Bachelor of Computer Applications (B.C.A.)</h3>
+                              <div class="edu-institution"><i class="fa fa-university"></i> SMT.C.Z.M.G.NCA College (Saurashtra University), Jamnagar, Gujarat, India</div>
+                              <p class="edu-desc">Undergraduate degree focused on fundamental computer science concepts, object-oriented programming, database architectures, web technologies, and software engineering principles.</p>
+                         </div>
+
+                    </div>
+               </div>
+
+               <div class="col-md-6 col-sm-12">
+                    <div class="background-image education-img"></div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Quotes / Philosophy Section -->
+
+<section id="quotes" class="parallax-section">
+     <div class="overlay"></div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <i class="wow fadeInUp fa fa-quote-left" data-wow-delay="0.4s"></i>
+                    <h2 class="wow fadeInUp" data-wow-delay="0.6s">"Driven to design, build, and deploy robust, high-performance web systems by combining clean backend architectures with dynamic, intuitive user interfaces."</h2>
+                    <p class="wow fadeInUp" data-wow-delay="0.8s"><strong>Sagar P. Patel</strong> — Full Stack Developer (Laravel | Vue.js) &bull; 9+ Years of Industry Experience</p>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Contact Section -->
+
+<section id="contact" class="parallax-section">
+     <div class="container">
+          <div class="row flex-row-stretch">
+
+               <div class="col-md-6 col-sm-12">
+                    <div class="contact-form">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                              <h1 class="color-white">Get In Touch</h1>
+                              <p class="color-white">Interested in working together or discussing opportunities? Send me a message!</p>
+                         </div>
+
+                         <div id="contact-form">
+                              <form action="#" method="post">
+                                   <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                        <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name" required>
+                                   </div>
+                                   <div class="wow fadeInUp" data-wow-delay="0.6s">
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="Your Email Address" required>
+                                   </div>
+                                   <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject">
+                                   </div>
+                                   <div class="wow fadeInUp" data-wow-delay="1.0s">
+                                        <textarea name="message" rows="4" class="form-control" id="message" placeholder="Write your message here..." required></textarea>
+                                   </div>
+                                   <div class="wow fadeInUp col-md-6 col-sm-8" data-wow-delay="1.2s">
+                                        <input name="submit" type="submit" class="form-control" id="submit" value="Send Message">
+                                   </div>
+                              </form>
+                         </div>
+
+                    </div>
+               </div>
+
+               <div class="col-md-3 col-sm-6">
+                    <div class="background-image contact-img"></div>
+               </div>
+
+               <div class="bg-dark col-md-3 col-sm-6">
+                    <div class="contact-thumb">
+                         <div class="wow fadeInUp contact-info" data-wow-delay="0.4s">
+                              <h3 class="color-white">Location</h3>
+                              <p>Ahmedabad, Gujarat, IN 382421</p>
+                         </div>
+
+                         <div class="wow fadeInUp contact-info" data-wow-delay="0.6s">
+                              <h3 class="color-white">Contact Info</h3>
+                              <ul class="contact-info-list">
+                                   <li><i class="fa fa-phone"></i> +91 8866561050</li>
+                                   <li><i class="fa fa-envelope-o"></i> <a href="mailto:sagarp9036@gmail.com">sagarp9036@gmail.com</a></li>
+                                   <li><i class="fa fa-map-marker"></i> Ahmedabad, Gujarat, India</li>
+                                   <li><i class="fa fa-code"></i> Full Stack (Laravel / Vue)</li>
+                              </ul>
+                         </div>
+
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Footer Section -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <div class="wow fadeInUp footer-copyright" data-wow-delay="0.3s">
+                         <p>Copyright &copy; 2026 <strong>Sagar P. Patel</strong>. All Rights Reserved.</p>
+                    </div>
+				<ul class="wow fadeInUp social-icon" data-wow-delay="0.5s">
+                         <li><a href="mailto:sagarp9036@gmail.com" class="fa fa-envelope" title="Email"></a></li>
+                         <li><a href="tel:+918866561050" class="fa fa-phone" title="Phone"></a></li>
+                         <li><a href="https://linkedin.com/in/sagar-patel92" target="_blank" class="fa fa-linkedin" title="LinkedIn"></a></li>
+                         <li><a href="https://sagarpatel92.github.io/" target="_blank" class="fa fa-github" title="GitHub"></a></li>
+                    </ul>
+               </div>
+			
+		</div>
+	</div>
+</footer>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
 </html>
